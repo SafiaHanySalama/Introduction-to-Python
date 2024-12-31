@@ -5,6 +5,9 @@ Create variables called circumference and area and assign them their appropriate
 Print the two variables.
 '''
 radius = input("Enter the radius: ")
+if radius<0:
+    print("Please enter a positive number")
+    radius = input("Enter the radius: ")
 circumference = 2 * 3.14159 * float(radius)
 area = 3.14159 * float(radius) ** 2
 print("Circumference:", circumference)
